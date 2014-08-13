@@ -9,6 +9,8 @@ This implementation attempts to handle the quirkiness of FileSystemWatcher
 
 Example usage
 
+'''
+
 FileSystemObserver fso = new FileSystemObserver(path, true);
 fso.ChangedEvent += fso_ChangedEvent;
 fso.CreatedEvent += fso_CreatedEvent;
@@ -36,3 +38,5 @@ void fso_ChangedEvent(string path)
 {
   Console.WriteLine(string.Format("ChangedEvent: {0}", path));
 }
+
+'''
